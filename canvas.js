@@ -20,8 +20,8 @@ for (let i = 0; i < columns; i++) {
     drops[i] = 1;
 }
 
-//ctx.fillStyle = '#000';
-//ctx.fillRect(0, 0, canvas.width, canvas.height);
+ctx.fillStyle = '#000';
+ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 
 function draw() {
