@@ -19,7 +19,7 @@
     
     <header class=transparent>
       <h1 aria-hidden>My Little Website</h1>
-      <h2>main site</h2>
+      <h2 id="subtitle">-1</h2>
     </header>
     
     <main id="main">
@@ -223,6 +223,7 @@
         <button onclick="bold()">change weight</button>
       </span>
     </section>
+    <br>
   </main>
 
     <main id="experiments">
@@ -332,18 +333,9 @@
     
     <nav class=transparent>
       <h2>Other pages</h2>
-      <dev id="main">MAIN</dev>
-        <dev id="stuff">STUFF</dev>
-        <dev id="experiments">EXPERIMENTS</dev>
-        
-        <br>
-
-        <select id=section>
-            <option selected>main</option>
-            <option>stuff</option>
-            <option>experiments</option>
-        </select>
-        <button onclick=display()>enter</button>
+        <button onclick="show('main')">Main</button>
+        <button onclick="show('stuff')">Stuff</button>
+        <button onclick="show('experiments')">Experiments</button>
     </nav>
     <br>
     
@@ -354,25 +346,6 @@
     <script src="/progress.js"></script>
     <script src="/canvas.js"></script>
     <script src="/script.js"></script>
-    <script>
-      let isBold = true
-      function bold(){
-        const el = document.getElementById("text")
-        isBold = !isBold
-        el.classList.toggle("bold")
-        el.innerHTML = `This text gets ${(isBold ? "bold" : "normal")} when you press the button.`
-      }
-    </script>
-    <script>
-      number=0
-      function action(){
-        number++
-        el=document.getElementById("place")
-        el.innerHTML=number
-      }
-      function enter(){
-        document.getElementById("out").innerHTML=document.getElementById("select").value
-      }
-    </script>
+    <script src="/actions.js"></script>
   </body>
 </html>

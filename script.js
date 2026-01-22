@@ -5,6 +5,8 @@ const main=document.getElementById("main");
 const experiments=document.getElementById("experiments");
 const stuff=document.getElementById("stuff");
 
+const subtitle=document.getElementById("subtitle");
+
 function showAll(){
     main.removeAttribute("hidden");
     experiments.removeAttribute("hidden");
@@ -21,10 +23,11 @@ function hideAll(){
 function show(section){
     hideAll();
     document.getElementById(section).removeAttribute("hidden");
+    subtitle.innerText=section
 }
 
 function display(){
     show(document.getElementById("section").value);
 }
 
-show("stuff")
+show("main")
