@@ -1,6 +1,6 @@
 <div hidden>
   by mschro67
-  last change: Jan 21 2026
+  last change: Jan 22 2026
 </div>
 
 <!DOCTYPE html>
@@ -28,14 +28,10 @@
       <section>
         <h2>The structure of HTML</h2>
         HTML works with tags. You need them for everything: text, links, pictures, etc. There are opened and closed tags:
-        <br>
-        <span class=center>
-          <code>&lt;</code> 
-          opened
-          <br>
-          <code>&gt;</code>
-          closed
-        </span>
+        <code class=center>&lt;</code> 
+        opened,
+        <code class=center>&gt;</code>
+        closed
       </section>
       <br>
       
@@ -44,7 +40,8 @@
           Styling
           <span class=green>(without a style sheet)</span>
         </h2>
-        If you want to style without a CSS stylesheet, you can add commands in the opened tag like <code><[tag] style="font-family:arial;>"</code>.
+        If you want to style without a CSS stylesheet, you can do it in the opened tag like
+        <code>&lt;p style="font-family:arial;"&gt;&lt;/p&gt;</code>.
         <br>
         <span class=center style="font-family:arial;">This is an example</span>
       </section>
@@ -52,44 +49,82 @@
       
       <section>
         <h2>Links</h2>
-        You can create links in HTML with the <code>a</code> tag, <code>href="example.com"</code> in the opened tag and and some text. For example: 'click here'
-        <a class=center href="/index.html">back to the main site</a>
+        You can create links in HTML with the 
+        <code>a</code> 
+        tag, 
+        <code>href="example.com"</code> 
+        in the opened tag and and some text. For example: 'click here'
+        <br>
+        <a class=center href="/index.html">click here</a>
       </section>
       <br>
       
       <section>
       <h2>Images</h2>
-      If you want to add a image to your Website by adding the <code>img</code> tag. You can add <code>src="example.com"</code> in the <code>img</code> tag.
+      If you want to add a image to your Website, you can use the 
+      <code>img</code> 
+      tag. You can add 
+      <code>src="example.com"</code> 
+      to the 
+      <code>img</code> 
+      tag like this:
       <br>
-      <img class=center style="border:solid #00FF00;padding:1%;" alt="forest" src="https://mimo.app/i/forest.png">
+      <div class="center"><img style="width:25%" alt="forest" src="https://media.istockphoto.com/id/1160438555/de/foto/nebel-und-wolken-auf-dem-berg.webp?s=1024x1024&w=is&k=20&c=V0kIHvKUohAfBtMpNTf0xZa6IITLIwQBy2SQDEIgYMA="></div>
+      <br>
+      Source: istockphoto.com
     </section>
     <br>
       
     <section>
       <h2>Frames</h2>
-      To add a Frame around a image on your website, you have to add <code>&lt;[tag] style="border:solid;&gt;"</code> in the opened tag or in the CSS sheet.
-      <span class=center style="border:solid #00FF00;">example</span>
+      To add a Frame around a image on your website, you have to add 
+      <code>&lt;p style="border:solid;"&gt;</code> 
+      to the opened tag or to the CSS sheet.
+      <br>
+      <div class=center>
+        <span style="width:100px; border:solid #00FF00;">example</span>
+      </div>
     </section>  
     <br>
       
     <section>
       <h2>Rounded frames</h2>
-      For rounded Frames you use <code>border-radius</code>, like this: <code>[tag]{border:solid;border-radius:5px;}</code>
-      <span class=center style="border:solid #00FF00;border-radius:10px;">in action this looks like this.</span>
+      For rounded frames you use 
+      <code>border-radius</code>, like this: 
+      <code>&lt; style="border:solid;border-radius:5px;"&gt;</code>
+      <br>
+      <div class=center>
+        <span style="border:solid #00FF00;border-radius:10px;">in action this looks like this.</span>
+      </div>
     </section>
     <br>
       
     <section>
-      <h2>aligning text in the center</h2>
-      If you want to have text in the center of a line, you need <code>[tag]{text-align:center;}</code>.
+      <h2>Aligning text in the center</h2>
+      If you want to have text in the center of a line, you need 
+      <code>text-align:center;</code>.
+      <br>
       <span class=center>This is an example.</span>
     </section>
     <br>
     
     <section>
       <h2>Bold and italic text</h2>
-      With the <code>b</code> or the <code>strong</code> tag you can make text <b>bold</b> and if you want <i>italic</i> text, you use the <code>i</code> or the <code>em</code> tag.
-      <code>Bold</code> text is slightly brighter than normal text.
+      With the 
+      <code>b</code> 
+      or the 
+      <code>strong</code> 
+      tag you can make text 
+      <b>bold</b> 
+      and if you want 
+      <i>italic</i> 
+      text, you use the 
+      <code>i</code> 
+      or the 
+      <code>em</code> 
+      tag.
+      <code>Bold</code> 
+      text is slightly brighter than normal text.
     </section>
     <br>
     
@@ -97,9 +132,11 @@
       <h2>Changing CSS classes using JavaScript</h2>
       You can change the classes of an HTML object with JavaScript by modifying the <code>classList</code> from an element that you get by using selectors like <code>getElementByClass()</code> with things like <code>add()</code>, <code>remove()</code> or <code>toggle()</code>.
       <br>
-      <span id="text">This text switches to bold if you press the button.</span>
-      <br>
-      <span class=center><button onclick="bold()">change weight</button></span>
+      <div class=center>
+        <span id="text">This text switches to bold if you press the button.</span>
+        <br>
+        <button onclick="bold()">change weight</button>
+      </span>
     </section>
   </main>
   
@@ -112,7 +149,7 @@
   <br>
   
   <footer aria-hidden>
-    This website was made by <a class=normal href="https://github.com/mschro67" target="_blank">mschro67</a>.<br>&copy; 2026 - All rights reserved
+    This website was made by <a class=footer href="https://github.com/mschro67" target="_blank">mschro67</a>.<br>&copy; 2026 - All rights reserved
   </footer>
     
     <script>

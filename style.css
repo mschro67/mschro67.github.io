@@ -46,6 +46,7 @@ a{
   color:#FFF;
   text-decoration-color:#FFF;
   font-weight:bold;
+  display:inline;
 }
 a:hover{
   color:#0F0;
@@ -54,9 +55,22 @@ a:hover{
 a.normal{
   font-weight:normal;
 }
+a.footer{
+  color:#777;
+  font-weight:normal;
+  text-decoration:dotted underline #777;
+}
+a.footer:hover{
+  color:#777;
+  font-weight:bold;
+  text-decoration:underline #777;
+}
 
 .green,header h2,code{
   color:#0F0;
+}
+code{
+  display:inline;
 }
 
 canvas{
@@ -81,7 +95,6 @@ button{
 button:hover{
   color:#0F0;
   border-color:#0F0;
-  transform:scale(1.03)
 }
 
 progress.bar{
@@ -90,6 +103,7 @@ progress.bar{
   height:20px;
   accent-color:#0F0;
   background-color: #000;
+  text-align: center;
 }
 progress.bar::-webkit-progress-value{
   background-color:#0F0;
