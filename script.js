@@ -23,8 +23,8 @@ function show(section){
     document.getElementById(section).removeAttribute("hidden");
 }
 
-function enter(){
-    show(document.getElementById("select").value);
+function display(){
+    show(document.getElementById("section").value);
 }
 
-showAll()
+show("stuff")
