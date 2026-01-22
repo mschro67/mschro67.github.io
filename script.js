@@ -24,6 +24,7 @@ function show(section){
     hideAll();
     document.getElementById(section).removeAttribute("hidden");
     subtitle.innerText=section
+    window.location.hash="header";
 }
 
 function display(){
