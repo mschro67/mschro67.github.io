@@ -12,7 +12,9 @@ const titles={
 
 function showAll(){
     for (const content of contents){
-        content.removeAttribute("hidden");
+        if (content.hasAttribute("hidden")){
+            content.removeAttribute("hidden");
+        }
     }
 }
 
