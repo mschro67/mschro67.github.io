@@ -13,7 +13,7 @@ function bold(){
 let number=0
 function action(){
     number++
-    el=document.getElementById("place")
+    el=document.getElementById("number")
     el.innerHTML=number
 }
     
