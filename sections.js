@@ -5,8 +5,6 @@ const contents=document.getElementsByTagName("main");
 const subtitle=document.getElementById("subtitle");
 const titles={
     "progress":"My Progress",
-    "stuff":"Frontend Stuff",
-    "experiments":"Experiments",
     "html_main":"HTML Basics",
     "css_main":"CSS Basics",
     "js_main":"JavaScript Basics",
