@@ -3,6 +3,11 @@
 
 const contents=document.getElementsByTagName("main");
 const subtitle=document.getElementById("subtitle");
+const titles={
+    "progress":"My Progress",
+    "stuff":"Frontend Stuff",
+    "experiments":"Experiments"
+}
 
 function showAll(){
     for (const content of contents){
@@ -21,7 +26,7 @@ function hideAll(){
 function show(section){
     hideAll();
     document.getElementById(section).removeAttribute("hidden");
-    subtitle.innerText=section;
+    subtitle.innerText=titles[section];
 
     window.scrollTo(0, 0);
 
@@ -33,8 +38,4 @@ function show(section){
 
 }
 
-function display(){
-    show(document.getElementById("section").value);
-}
-
-show("main")
+show("progress");
