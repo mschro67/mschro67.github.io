@@ -6,7 +6,10 @@ const subtitle=document.getElementById("subtitle");
 const titles={
     "progress":"My Progress",
     "stuff":"Frontend Stuff",
-    "experiments":"Experiments"
+    "experiments":"Experiments",
+    "html_main":"HTML Basics",
+    "css_main":"CSS Basics",
+    "js_main":"JavaScript Basics",
 }
 
 function showAll(){
