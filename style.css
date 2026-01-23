@@ -1,5 +1,5 @@
 /*by mschro67
-last change: Jan 19 2026*/
+last change: Jan 23 2026*/
 
 body{
   color:#FFF;
@@ -104,6 +104,9 @@ progress.bar{
   accent-color:#0F0;
   background-color: #000;
   text-align: center;
+}
+progress.bar::-webkit-progress-bar{
+  background-color:#000;
 }
 progress.bar::-webkit-progress-value{
   background-color:#0F0;

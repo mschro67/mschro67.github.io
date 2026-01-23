@@ -1,30 +1,36 @@
 //by mschro67
-//last change: Jan 22 2025
+//last change: Jan 23 2025
 
-const main=document.getElementById("main");
-const experiments=document.getElementById("experiments");
-const stuff=document.getElementById("stuff");
-
+const contents=document.getElementsByTagName("main");
 const subtitle=document.getElementById("subtitle");
 
 function showAll(){
-    main.removeAttribute("hidden");
-    experiments.removeAttribute("hidden");
-    stuff.removeAttribute("hidden");
+    for (const content of contents){
+        content.removeAttribute("hidden");
+    }
 }
 
 function hideAll(){
-    showAll();
-    main.toggleAttribute("hidden");
-    experiments.toggleAttribute("hidden");
-    stuff.toggleAttribute("hidden");
+    for (const content of contents){
+        if (!content.hasAttribute("hidden")){
+            content.toggleAttribute("hidden");
+        }
+    }
 }
 
 function show(section){
     hideAll();
     document.getElementById(section).removeAttribute("hidden");
-    subtitle.innerText=section
-    window.location.hash="header";
+    subtitle.innerText=section;
+
+    window.scrollTo(0, 0);
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+
 }
 
 function display(){
