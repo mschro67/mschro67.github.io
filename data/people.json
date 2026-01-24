@@ -1,0 +1,50 @@
+[
+    {
+        "name": "John Doe",
+        "age": 30,
+        "occupation":"Software Developer",
+        "hobbies": ["coding", "hiking", "photography"]
+    },
+    {
+        "name": "Jane Smith",
+        "age": 25,
+        "occupation": "Graphic Designer",
+        "hobbies": ["drawing", "traveling", "reading"]
+    },
+    {
+        "name": "Emily Johnson",
+        "age": 35,
+        "occupation": "Data Scientist",
+        "hobbies": ["data analysis", "machine learning", "chess"]
+    },
+    {
+        "name": "Michael Brown",
+        "age": 28,
+        "occupation": "Marketing Specialist",
+        "hobbies": ["blogging", "social media", "cooking"]
+    },
+    {
+        "name": "Sarah Davis",
+        "age": 32,
+        "occupation": "Project Manager",
+        "hobbies": ["organizing", "team building", "yoga"]
+    },
+    {
+        "name": "David Wilson",
+        "age": 29,
+        "occupation": "Financial Analyst",
+        "hobbies": ["investing", "reading financial news", "golf"]
+    },
+    {
+        "name": "Laura Martinez",
+        "age": 27,
+        "occupation": "Content Writer",
+        "hobbies": ["writing", "traveling", "cooking"]
+    },
+    {
+        "name": "James Anderson",
+        "age": 31,
+        "occupation": "UX Designer",
+        "hobbies": ["user research", "prototyping", "gaming"]
+    }
+]
