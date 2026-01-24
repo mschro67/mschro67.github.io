@@ -14,7 +14,7 @@ const out=document.getElementById("out");
 function table(header,data) {
     let table=`<table><tr><th>${header.charAt(0).toUpperCase() + header.slice(1).replace("_"," ")}</th><th>Proportion</th><th>People</th><th>Percent</th></tr>`;
     for (const key in data) {
-        table+=`<tr><td>${key}</td><td><progress value=${data[key]/persons} max=1></progress></td><td>${data[key]}</td><td>${Math.floor(data[key]/persons*1000)/10}<span style="color:${color.value};">%</span></td></tr>`;
+        table+=`<tr><td>${key}</td><td><progress value=${data[key]/persons} max=1></progress></td><td>${data[key]}</td><td>${Math.floor(data[key]/persons*1000)/10}%</td></tr>`;
     }
     table+="</table>";
     return table;
