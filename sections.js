@@ -1,5 +1,5 @@
 //by mschro67
-//last change: Jan 23 2025
+//last change: Jan 23 2026
 
 const contents=document.getElementsByTagName("main");
 const subtitle=document.getElementById("subtitle");
