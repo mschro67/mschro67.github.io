@@ -36,7 +36,7 @@ function display(){
             for (const option in options){
                 table+=`<td>${person[option]}</td>`;
             }
-            table+="</td>";
+            table+="</tr>";
         }
         out.innerHTML=table;
         style.innerHTML=`th{border:solid 1px ${color.value}}th,td{width:${100/count}%}`;
