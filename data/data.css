@@ -37,3 +37,7 @@ nav{
 a button{
     width:75px;
 }
+
+button,input,select{
+    height:25px;
+}

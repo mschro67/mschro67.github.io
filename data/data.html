@@ -22,19 +22,14 @@
         <main>
             <section>
                 <select id="selected">
-                    <option selected>-</option>
-                    <option>age</option>
-                    <option>occupation</option>
-                    <option>name</option>
-                    <option>hobby</option>
+                    <option hidden selected>-</option>
                 </select>
-                <button onclick="display()">enter</button>
-                <br>
-                color: 
                 <input value="#777777" type="color" id="color">
+                <br>
+                <button onclick="display()">enter</button>
             </section>
             <br>
-            <section id="container">
+            <section id="out">
                 <span style="color:#777;">select data</span>
             </section>
         </main>
@@ -42,7 +37,7 @@
             <a href="/index.html"><button>Back</button></a><br>
             <br>
             <a href="https://github.com/mschro67/mschro67.github.io/tree/main/data" target="_blank"><button>GitHub</button></a><br>
-            <a href="/data/people.json" target="_blank"><button>Data</button></a><br>
+            <a href="/data/data.json" target="_blank"><button>Data</button></a><br>
         </nav>
         <script type="module" src="data.js"></script>
     </body>
