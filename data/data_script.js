@@ -21,8 +21,25 @@ function table(header,data) {
 }
 
 function display(){
-    if (selected.value==="-"){
+    if (selected.value==="-") {
         out.innerHTML=`<span style='color:${color.value};'>select data</span>`;
+    }else if (selected.value==="all") {
+        let table="<table><tr>";
+        let count=0;
+        for (const option in options) {
+            table+=`<th>${option.charAt(0).toUpperCase() + option.slice(1).replace("_"," ")}</th>`;
+            count++;
+        }
+        table+="</tr>";
+        for (const person of data){
+            table+="<tr>";
+            for (const option in options){
+                table+=`<td>${person[option]}</td>`;
+            }
+            table+="</td>";
+        }
+        out.innerHTML=table;
+        style.innerHTML=`th{border:solid 1px ${color.value}}th,td{width:${100/count}%}`;
     }else{
         out.innerHTML=table(selected.value,options[selected.value]);
         style.innerHTML=`progress::-webkit-progress-value {background-color:${color.value};}progress::-moz-progress-bar {background-color:${color.value};}th{border:solid 1px ${color.value}}`;
