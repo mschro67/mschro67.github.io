@@ -14,7 +14,7 @@ const out=document.getElementById("out");
 function table(header,data) {
     let table=`<table><tr><th>${header.charAt(0).toUpperCase() + header.slice(1).replace("_"," ")}</th><th>Proportion</th><th>People</th><th>Percent</th></tr>`;
     for (const key in data) {
-        table+=`<tr><td>${key}</td><td><progress value=${data[key]/persons} max=1></progress></td><td>${data[key]}</td><td>${data[key]/persons*100}<span style="color:${color.value};">%</span></td></tr>`;
+        table+=`<tr><td>${key}</td><td><progress value=${data[key]/persons} max=1></progress></td><td>${data[key]}</td><td>${Math.floor(data[key]/persons*1000)/10}<span style="color:${color.value};">%</span></td></tr>`;
     }
     table+="</table>";
     return table;
@@ -50,12 +50,16 @@ function loadOptions(){
 
 for (const person of data) {
     for (const option in person){
-        if (Array.isArray(person[option])){
-            for (const item of person[option]){
-                addValue(option,item)
-            }
+        if (option==="id"){
+            continue;
         }else{
-            addValue(option,person[option])
+            if (Array.isArray(person[option])){
+                for (const item of person[option]){
+                    addValue(option,item);
+                }
+            }else{
+                addValue(option,person[option]);
+            }
         }
     }
 }

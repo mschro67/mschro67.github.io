@@ -1,7 +1,7 @@
 //by mschro67
 //last change: Jan 23 2026
 
-function c(sections,done) { //c for course progress in percent
+function c(sections,done) { //c stands for course progress in percent
   return Math.floor(100 / sections * done);
 }
 
