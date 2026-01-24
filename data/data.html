@@ -1,0 +1,39 @@
+<div hidden>
+    by mschro67
+    last change: Jan 24 2026
+</div>
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="mschro67">
+        <title>Data Display</title>
+        <link rel="stylesheet" href="data.css">
+    </head>
+    <style id="style">
+    </style>
+    <body>
+        <h1>Data Display</h1>
+        <div>
+            <select id="selected">
+                <option selected>-</option>
+                <option>ages</option>
+                <option>occupations</option>
+                <option>names</option>
+            </select>
+            <button onclick="show()">enter</button>
+            <br>
+            color: 
+            <input value="#777777" type="color" id="color">
+        </div>
+        <br>
+        <div id="container">
+            <span style="color:#777;">select data</span>
+        </div>
+        <script src="data.js"></script>
+        <a href="/index.html"><button>home</button></a>
+    </body>
+</html>

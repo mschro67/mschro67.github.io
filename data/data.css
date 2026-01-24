@@ -1,0 +1,35 @@
+/*by mschro67
+last change: Jan 24 2026*/
+
+*{
+    text-align:center;
+}
+
+table {
+    width: 100%;
+    border:solid 2px black;
+    text-align:center;
+}
+tr,th,td {
+    text-align:center;
+}
+tr{
+    width:33%;
+}
+
+progress {
+    width:100%;
+    height:100%;
+    border:none;
+    background-color:white;
+    accent-color:grey;
+}
+progress::-webkit-progress-bar {
+    background-color: white;
+}
+
+a{
+    position:fixed;
+    top:2px;
+    left:2px;
+}

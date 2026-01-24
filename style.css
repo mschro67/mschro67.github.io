@@ -1,5 +1,5 @@
 /*by mschro67
-last change: Jan 23 2026*/
+last change: Jan 24 2026*/
 
 body{
   color:#FFF;
@@ -80,7 +80,7 @@ canvas{
   padding:0px;
 }
 
-button{
+button,.button{
   color:#FFF;
   background-color:#000;
 
@@ -92,7 +92,7 @@ button{
   margin:2px;
   cursor:pointer;
 }
-button:hover{
+button,.button:hover{
   color:#0F0;
   border-color:#0F0;
 }
