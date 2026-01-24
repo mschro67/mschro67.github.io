@@ -13,8 +13,8 @@ table {
 tr,th,td {
     text-align:center;
 }
-tr{
-    width:33%;
+td{
+    width:25%;
 }
 
 progress {
@@ -28,8 +28,12 @@ progress::-webkit-progress-bar {
     background-color: white;
 }
 
-a{
+nav{
     position:fixed;
     top:2px;
     left:2px;
+}
+
+a button{
+    width:75px;
 }

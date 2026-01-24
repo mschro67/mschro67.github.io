@@ -16,24 +16,34 @@
     <style id="style">
     </style>
     <body>
-        <h1>Data Display</h1>
-        <div>
-            <select id="selected">
-                <option selected>-</option>
-                <option>ages</option>
-                <option>occupations</option>
-                <option>names</option>
-            </select>
-            <button onclick="display()">enter</button>
+        <header>
+            <h1>Data Display</h1>
+        </header>
+        <main>
+            <section>
+                <select id="selected">
+                    <option selected>-</option>
+                    <option>age</option>
+                    <option>occupation</option>
+                    <option>name</option>
+                    <option>hobby</option>
+                </select>
+                <button onclick="display()">enter</button>
+                <br>
+                color: 
+                <input value="#777777" type="color" id="color">
+            </section>
             <br>
-            color: 
-            <input value="#777777" type="color" id="color">
-        </div>
-        <br>
-        <div id="container">
-            <span style="color:#777;">select data</span>
-        </div>
-        <a href="/index.html"><button>back</button></a>
+            <section id="container">
+                <span style="color:#777;">select data</span>
+            </section>
+        </main>
+        <nav>
+            <a href="/index.html"><button>Back</button></a><br>
+            <br>
+            <a href="https://github.com/mschro67/mschro67.github.io/tree/main/data" target="_blank"><button>GitHub</button></a><br>
+            <a href="/data/people.json" target="_blank"><button>Data</button></a><br>
+        </nav>
         <script type="module" src="data.js"></script>
     </body>
 </html>
