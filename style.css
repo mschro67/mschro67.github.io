@@ -60,7 +60,6 @@ a.normal{
 a.footer{
   color:#777;
   font-weight:normal;
-  text-decoration:dotted underline #777;
 }
 a.footer:hover{
   color:#777;
