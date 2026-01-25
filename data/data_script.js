@@ -52,10 +52,7 @@ function submit(){
                 }
                 table+="</tr>";
             }
-<<<<<<< HEAD
             table+="</tr>";
-=======
->>>>>>> 4e46505 (Add filters to data/data.html)
         }
         out.innerHTML=table;
         style.innerHTML=`th{border:solid 1px ${color.value}}th,td{width:${100/count}%}`;
