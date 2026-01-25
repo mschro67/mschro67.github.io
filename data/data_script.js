@@ -14,25 +14,6 @@ const out=document.getElementById("out");
 const filter_selected=document.getElementById("filter_selected");
 const filter_value=document.getElementById("filter_value");
 
-function table(header,values) {
-    let table=`<table><tr><th>${header.charAt(0).toUpperCase() + header.slice(1).replace("_"," ")}</th><th>Relative</th><th>Absolute</th><th>Percent</th></tr>`;
-    let max=0;
-    for (const key in values){
-        if (values[key]>max){
-            max=values[key];
-        }
-    }
-    for (const key in values) {
-        if (header!=filter_selected.value){
-            return "The filter attribute must be selected attribute!";
-        }else if (attributes[filter_selected][key]!=filter_value.value){
-            table+=`<tr><td>${key}</td><td><progress value=${values[key]/entities} max=${max+1}></progress></td><td>${values[key]}</td><td>${Math.floor(values[key]/entities*1000)/10}%</td></tr>`;
-        }
-    }
-    table+="</table>";
-    return table;
-}
-
 function submit(){
     if (selected.value==="-") {
         out.innerHTML=`<span style='color:${color.value};'>select data</span>`;
@@ -66,10 +47,10 @@ function submit(){
         }
         for (const key in attributes[selected.value]){
             if (key==filter_value.value || filter_selected.value=="-") {
-                table+=`<tr><td>${key}</td><td><progress value=${attributes[selected.value][key]} max=${max+1}></progress></td><td>${attributes[selected.value][key]}</td><td>${Math.floor(attributes[selected.value][key]/entities*1000)/10}%</td></tr>`;
+                table+=`<tr><td>${key}</td><td><progress value=${attributes[selected.value][key]} max=${max}></progress></td><td>${attributes[selected.value][key]}</td><td>${Math.floor(attributes[selected.value][key]/entities*1000)/10}%</td></tr>`;
             }
         }
-        out.innerHTML=table;
+        out.innerHTML=`${table}max: ${max}`;
         style.innerHTML=`progress::-webkit-progress-bar{background-color:#FFF}progress::-webkit-progress-value {background-color:${color.value};}progress::-moz-progress-bar {background-color:${color.value};}th{border:solid 1px ${color.value}}`;
     }
 }
