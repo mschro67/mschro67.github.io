@@ -60,6 +60,7 @@ a.normal{
 a.footer{
   color:#777;
   font-weight:normal;
+  text-decoration:none;
 }
 a.footer:hover{
   color:#777;
