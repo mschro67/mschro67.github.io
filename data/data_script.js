@@ -51,7 +51,7 @@ function submit(){
             }
         }
         out.innerHTML=`${table}max: ${max}`;
-        style.innerHTML=`progress::-webkit-progress-bar{background-color:#FFF}progress::-webkit-progress-value {background-color:${color.value};}progress::-moz-progress-bar {background-color:${color.value};}th{border:solid 1px ${color.value}}`;
+        style.innerHTML=`progress::-webkit-progress-value {background-color:${color.value};}progress::-moz-progress-bar {background-color:${color.value};}th{border:solid 1px ${color.value}}`;
     }
 }
 
