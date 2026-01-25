@@ -52,7 +52,6 @@ function submit(){
                 }
                 table+="</tr>";
             }
-            table+="</tr>";
         }
         out.innerHTML=table;
         style.innerHTML=`th{border:solid 1px ${color.value}}th,td{width:${100/count}%}`;
