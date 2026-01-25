@@ -25,9 +25,16 @@
                     <option hidden selected>-</option>
                     <option>all</option>
                 </select>
-                <input value="#777777" type="color" id="color">
                 <br>
-                <button onclick="display()">enter</button>
+                <select id="filter_selected">
+                    <option selected>-</option>
+                </select>
+                <input type="text" id="filter_value" placeholder="value">
+                <br>
+                <input value="#777777" type="color" id="color">
+                <button onclick="submit()">submit</button>
+                <br>
+                <small>If you haven't selected all, you cant select an attribute for the filter.</small>
             </section>
             <br>
             <section id="out">
