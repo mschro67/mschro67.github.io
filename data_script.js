@@ -1,7 +1,7 @@
 //by mschro67
 //last change: Jan 29 2026
 
-import data from "/data/data.json" with { type: "json" };
+import data from "../data/data.json" with { type: "json" };
 
 let attributes={};
 const entities=data.length;
@@ -55,7 +55,7 @@ function submit(){
             }
         }
         out.innerHTML=`${table}max: ${max}`;
-        style.innerHTML=`progress::-webkit-progress-value {background-color:${color.value};}progress::-moz-progress-bar {background-color:${color.value};}th{border:solid 1px ${color.value}}`;
+        style.innerHTML=`progress::-webkit-progress-value {background-color:${color.value};}progress::-moz-progress-bar {background-color:${color.value};}th{border:solid 1px ${color.value};}`;
     }
 }
 
