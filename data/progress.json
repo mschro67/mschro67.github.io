@@ -1,0 +1,79 @@
+[{
+    "name":"Python",
+    "short":"py",
+    "type":"language",
+    "usage":"backend",
+    "max":14,
+    "complete":14
+},
+{
+    "name":"Python Developer",
+    "short":"pydev",
+    "type":"path",
+    "max":9,
+    "complete":9
+},
+{
+    "name":"HTML",
+    "full_name":"Hypertext Markup Language",
+    "short":"html",
+    "type":"language",
+    "usage":"frontend",
+    "max":5,
+    "complete":5
+},
+{
+    "name":"Swift",
+    "short":"swift",
+    "type":"language",
+    "usage":["frontend","backend"],
+    "max":7,
+    "complete":4.66
+},
+{
+    "name":"SQL",
+    "full_name":"Structured Query Language",
+    "short":"sql",
+    "type":"language",
+    "usage":"backend",
+    "max":6,
+    "complete":4.42
+},
+{
+    "name":"JavaScript",
+    "short":"js",
+    "type":"language",
+    "usage":["frontend","backend"],
+    "max":16,
+    "complete":9.5
+},
+{
+    "name":"Backend Developer",
+    "short":"back",
+    "type":"path",
+    "max":9,
+    "complete":4.7
+},
+{
+    "name":"Frontend Developer",
+    "short":"front",
+    "type":"path",
+    "max":15,
+    "complete":6.01
+},
+{
+    "name":"CSS",
+    "full_name":"Cascanding Style Sheets",
+    "short":"css",
+    "type":"language",
+    "usage":"frontend",
+    "max":4,
+    "complete":2.06
+},
+{
+    "name":"Full Stack Developer",
+    "short":"full",
+    "type":"path",
+    "max":20,
+    "complete":5.52
+}]

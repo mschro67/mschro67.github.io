@@ -1,9 +1,9 @@
 //by mschro67
-//last change: Jan 24 2026
+//last change: Jan 29 2026
 
 import data from "/data/data.json" with { type: "json" };
 
-let attributes={}
+let attributes={};
 const entities=data.length;
 
 const style=document.getElementById("style");
@@ -29,7 +29,11 @@ function submit(){
             if (entity[filter_selected.value]==filter_value.value || filter_selected.value=="-"){
                 table+="<tr>";
                 for (const attribute in attributes){
-                    table+=`<td>${entity[attribute]}</td>`;
+                    if (entity[attribute]!=undefined){
+                        table+=`<td>${entity[attribute]}</td>`;
+                    }else{
+                        table+="<td></td>"
+                    }
                 }
                 table+="</tr>";
             }

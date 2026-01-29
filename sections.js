@@ -1,27 +1,27 @@
 //by mschro67
-//last change: Jan 23 2026
+//last change: Jan 29 2026
 
-const contents=document.getElementsByTagName("main");
+const sections=document.getElementsByTagName("main");
 const subtitle=document.getElementById("subtitle");
 const titles={
     "progress":"My Progress",
     "html_main":"HTML Basics",
     "css_main":"CSS Basics",
-    "js_main":"JavaScript Basics",
+    "js_main":"JavaScript Basics"
 }
 
 function showAll(){
-    for (const content of contents){
-        if (content.hasAttribute("hidden")){
-            content.removeAttribute("hidden");
+    for (const section of sections){
+        if (section.hasAttribute("hidden")){
+            section.removeAttribute("hidden");
         }
     }
 }
 
 function hideAll(){
-    for (const content of contents){
-        if (!content.hasAttribute("hidden")){
-            content.toggleAttribute("hidden");
+    for (const section of sections){
+        if (!section.hasAttribute("hidden")){
+            section.toggleAttribute("hidden");
         }
     }
 }
@@ -36,7 +36,6 @@ function show(section){
         left: 0,
         behavior: 'smooth'
     });
-
 }
 
 show("progress");

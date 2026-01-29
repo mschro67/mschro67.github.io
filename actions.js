@@ -1,22 +1,26 @@
 //by mschro67
-//last change: Jan 22 2026
+//last change: Jan 29 2026
 
-let isBold = true
-const el = document.getElementById("text")
+let isBold = true;
+const text = document.getElementById("text");
+
+let current=0;
+const number=document.getElementById("number");
+
+const out=document.getElementById("out");
+const select=document.getElementById("select")
 
 function bold(){
-    isBold = !isBold
-    el.classList.toggle("bold")
-    el.innerHTML = `This text gets ${(isBold ? "bold" : "normal")} when you press the button.`
+    isBold = !isBold;
+    text.classList.toggle("bold");
+    text.innerText = `This text gets ${(isBold ? "bold" : "normal")} when you press the button.`;
 }
 
-let number=0
 function action(){
-    number++
-    el=document.getElementById("number")
-    el.innerHTML=number
+    number++;
+    number.innerText=number;
 }
     
 function enter(){
-    document.getElementById("out").innerHTML=document.getElementById("select").value
+    out.innerText=select.value;
 }
