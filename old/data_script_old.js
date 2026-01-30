@@ -1,5 +1,5 @@
 //by mschro67
-//last change: Jan 30 2026
+//last change: Jan 29 2026
 
 import data from "../data/data.json" with { type: "json" };
 
@@ -8,6 +8,7 @@ const entities=data.length;
 
 const style=document.getElementById("style");
 const selected=document.getElementById("selected");
+const color=document.getElementById("color");
 const out=document.getElementById("out");
 
 const filter_selected=document.getElementById("filter_selected");
@@ -15,7 +16,7 @@ const filter_value=document.getElementById("filter_value");
 
 function submit(){
     if (selected.value==="-") {
-        out.innerHTML=`<span style='color:#0F0;'>select data</span>`;
+        out.innerHTML=`<span style='color:${color.value};'>select data</span>`;
     }else if (selected.value==="all") {
         let table="<table><tr>";
         let count=0;
@@ -38,7 +39,7 @@ function submit(){
             }
         }
         out.innerHTML=table;
-        style.innerHTML=`th,td{width:${100/count}%}`;
+        style.innerHTML=`th{border:solid 1px ${color.value}}th,td{width:${100/count}%}`;
     }else{
         let table=`<table><tr><th>${selected.value.charAt(0).toUpperCase() + selected.value.slice(1).replace("_"," ")}</th><th>Relative</th><th>Absolute</th><th>Percent</th></tr>`;
         table+="</tr>";
@@ -54,7 +55,7 @@ function submit(){
             }
         }
         out.innerHTML=`${table}max: ${max}`;
-        style.innerHTML=`td,th{width:25%;}`;
+        style.innerHTML=`progress::-webkit-progress-value {background-color:${color.value};}progress::-moz-progress-bar {background-color:${color.value};}th{border:solid 1px ${color.value};}`;
     }
 }
 

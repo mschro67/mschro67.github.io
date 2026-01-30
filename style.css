@@ -1,5 +1,5 @@
 /*by mschro67
-last change: Jan 24 2026*/
+last change: Jan 30 2026*/
 
 body{
   color:#FFF;
@@ -113,12 +113,13 @@ input:hover{
 select{
   color:#FFF;
   background-color:#000;
-
   border:solid 1px #FFF;
-  text-align: center;
+  border-radius:0px;
+  text-align:center;
 }
 select:hover{
   border-color:#0F0;
+  border-radius:0px;
   transform:scale(1.03)
 }
 
