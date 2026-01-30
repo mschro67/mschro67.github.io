@@ -98,5 +98,6 @@
   { "id": 97, "first_name": "Lo", "last_name": "Lux", "age": 30, "roles": ["User"], "status": "inactive", "tags": ["bright"] },
   { "id": 98, "first_name": "Mo", "last_name": "Mud", "age": 36, "roles": "Editor", "status": "active", "tags": ["ground"] },
   { "id": 99, "first_name": "Ny", "last_name": "Net", "age": 44, "roles": ["Admin", "User"], "status": "pending", "tags": ["grid"] },
-  { "id": 100, "first_name": "Oz", "last_name": "Oak", "age": 58, "roles": "User", "status": "active", "tags": ["tree"] }
+  { "id": 100, "first_name": "Oz", "last_name": "Oak", "age": 58, "roles": "User", "status": "active", "tags": ["tree"] },
+  { "id": 101, "first_name": "Jan", "last_name": "Jet", "age": 48, "roles": "Admin", "status": "active", "tags":["cool","tree"]}
 ]
