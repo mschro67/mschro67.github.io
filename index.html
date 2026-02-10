@@ -1,6 +1,6 @@
 <div hidden>
   by mschro67
-  last change: Feb 3 2026
+  last change: Feb 10 2026
 </div>
 
 <!DOCTYPE html>
@@ -104,6 +104,22 @@
         C
         <br>
         <progress aria-hidden class=bar max=100 value=3></progress><br>3%
+      </section>
+      <br>
+    </main>
+
+    <main id="about">
+      <section>
+        This website is a small project from me.
+        Its all coded by me except fot the cool background - thats made with AI.
+        I made it without any Frameworks.
+        <br>
+        The main part only is one HTML file.
+        If you press on the Buttons one section gets shown, while the other ones get hidden.
+        My code for this is in the <a href="./sections.js">sections.js</a> file.
+        <br>
+        The progress bars get their values from the JSON file <a href="./data/progress.json">progress.json</a>, that has the information for the courses.
+        You can see it there: <a href="./progress.js">progress.js</a>
       </section>
       <br>
     </main>
@@ -442,6 +458,7 @@
     <nav class=transparent>
       <h2>Other pages</h2>
         <button onclick="show('progress')">My Progress</button>
+        <button onclick="show('about')">About</button>
         <br>
         <button onclick="show('html_main')">HTML</button>
         <button onclick="show('css_main')">CSS</button>
