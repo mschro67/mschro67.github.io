@@ -1,13 +1,14 @@
 //by mschro67
-//last change: Jan 29 2026
+//last change: Feb 10 2026
 
 const sections=document.getElementsByTagName("main");
 const subtitle=document.getElementById("subtitle");
 const titles={
-    "progress":"My Progress",
-    "html_main":"HTML Basics",
-    "css_main":"CSS Basics",
-    "js_main":"JavaScript Basics"
+    "progress":"My brogress",
+    "html_main":"HTML basics",
+    "css_main":"CSS basics",
+    "js_main":"JavaScript basics",
+    "about":"About this website"
 }
 
 function showAll(){
