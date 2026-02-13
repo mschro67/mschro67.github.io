@@ -1,10 +1,10 @@
 //by mschro67
-//last change: Feb 10 2026
+//last change: Feb 13 2026
 
 const sections=document.getElementsByTagName("main");
 const subtitle=document.getElementById("subtitle");
 const titles={
-    "progress":"My brogress",
+    "progress":"My progress",
     "html_main":"HTML basics",
     "css_main":"CSS basics",
     "js_main":"JavaScript basics",
@@ -39,4 +39,4 @@ function show(section){
     });
 }
 
-show("progress");
+show("about");
