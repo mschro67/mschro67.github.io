@@ -3,12 +3,20 @@
 
 const sections=document.getElementsByTagName("main");
 const subtitle=document.getElementById("subtitle");
+const title=document.getElementById("title");
 const titles={
     "progress":"My progress",
     "html_main":"HTML basics",
     "css_main":"CSS basics",
     "js_main":"JavaScript basics",
     "about":"About this website"
+}
+const keywords={
+    "progress":"Progress",
+    "html_main":"HTML",
+    "css_main":"CSS",
+    "js_main":"JavaScript",
+    "about":"About"
 }
 
 function showAll(){
@@ -37,6 +45,8 @@ function show(section){
         left: 0,
         behavior: 'smooth'
     });
+
+    title.innerText="My Little Website - "+keywords[section];
 }
 
 show("about");
