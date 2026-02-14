@@ -28,6 +28,7 @@ header,main section,nav{
     border:solid #FFF;
     background:transparent;
     backdrop-filter:blur(2.5px);
+    margin:2px;
 }
 header,nav,footer{
     margin-bottom:1%;
