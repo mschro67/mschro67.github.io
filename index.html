@@ -1,7 +1,5 @@
-<div hidden>
-    by mschro67
-    last change: Feb 13 2026
-</div>
+<!--by mschro67
+last change: Feb 27 2026-->
 
 <!DOCTYPE html>
 
@@ -11,10 +9,12 @@
         <meta name="author" content="mschro67">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title id="title">My Little Website</title>
-        <link rel="stylesheet" href="style.css">
+        <!--<link rel="stylesheet" href="style.css">-->
         <link rel="icon" type="image/x-icon" href="/mschro67.ico">
     </head>
     
+    <style></style>
+
     <body>
         <canvas id=canvas></canvas>
 
@@ -410,17 +410,22 @@
         <nav class=transparent>
             <h2>Other pages</h2>
                 <button onclick="show('progress')">My Progress</button>
+                <br>
                 <button onclick="show('about')">About</button>
                 <br>
-                <button onclick="show('html_main')">HTML</button>
-                <button onclick="show('css_main')">CSS</button>
-                <button onclick="show('js_main')">JavaScript</button>
-                <br>
-                <a href="data.html"><button>Data Visualisation</button></a>
-                <a href="https://github.com/mschro67/mschro67.github.io" target="_blank"><button>GitHub</button></a>
-                <br>
-                <a href="./data/progress.json" target="_blank"><button>Progress JSON</button></a>
-                <a hidden href="./progress.js" target="_blank"><button>Progress JS</button></a>
+                <details>
+                    <summary class=center>Coding</summary>
+                    <button onclick="show('html_main')">HTML</button>
+                    <button onclick="show('css_main')">CSS</button>
+                    <button onclick="show('js_main')">JavaScript</button>
+                    <a href="data.html"><button>Data Visualisation</button></a>
+                </details>
+                <details>
+                    <summary class=center>Other</summary>
+                    <a href="https://github.com/mschro67/mschro67.github.io" target="_blank"><button>GitHub</button></a>
+                    <a href="./data/progress.json" target="_blank"><button>Progress JSON</button></a>
+                    <a hidden href="./progress.js" target="_blank"><button>Progress JS</button></a>
+                </details>
         </nav>
         <br>
         
@@ -432,5 +437,6 @@
         <script src="/canvas.js"></script>
         <script src="/sections.js"></script>
         <script src="/actions.js"></script>
+        <script src="/styling.js"></script>
     </body>
 </html>
