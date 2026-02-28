@@ -1,13 +1,13 @@
 /*
     by mschro67
-    last change: Jan 30 2026
+    last change: Feb 28 2026
 */
 
 body{
     color:#FFF;
     background-color:#000;
 
-    font-family:'Courier Prime', monospace;
+    font-family:Courier, monospace;
     text-align:justify;
 
     padding:0.5%;
